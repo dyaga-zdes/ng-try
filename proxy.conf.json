@@ -1,0 +1,17 @@
+{
+  "/api//*": {
+    "target": "https://ist.dev.design.ru/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/f//*": {
+    "target": "https://ist.dev.design.ru/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/upload//*": {
+    "target": "https://ist.dev.design.ru/",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
