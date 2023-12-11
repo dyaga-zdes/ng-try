@@ -39,5 +39,5 @@ export class TopBarComponent {
     private apiService: ApiService
   ) {}
 
-  items = this.apiService.getData<MenuCollection>('menu.getData');
+  items = this.apiService.getData<MenuCollection>('menu.getData').subscribe();
 }

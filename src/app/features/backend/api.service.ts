@@ -19,6 +19,10 @@ export class ApiService {
   ) {}
 
   public getData<T = BackendResponse>(action: BackendAction): Observable<T> {
-    return this.httpClient.get<T>(`/api/v1/?action=${action}`);
+    const endPoint = `/api/v1/?action=${action}`;
+    console.log(endPoint);
+    let result = this.httpClient.get<T>(endPoint);
+    console.log(result);
+    return result;
   }
 }
